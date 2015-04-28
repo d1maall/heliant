@@ -1,0 +1,137 @@
+@import "bourbon/bourbon"
+@import "http://webfonts.ru/import/ralewayc.css"
+@import "http://webfonts.ru/import/museocyr.css"
+
+html
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 100%
+
+body
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 100%
+
+.head
+  position: relative
+  background: url("bg6.jpg")
+  background-position: top
+  background-repeat: no-repeat
+  background-size: cover
+  height: 100%
+  width: 100%
+
+.descr
+  width: 50%
+  position: absolute
+  top: 50%
+  left: 50%
+  @include transform(translateX(-50%) translateY(-50%))
+  font-family: 'Raleway Cyr', serif
+  text-transform: uppercase
+  h1
+    font-family: 'Museo Sans Cyr', sans-serif
+    font-size: 4em
+    text-align: center
+    font-weight: 600
+    //color: #2d2d2d
+    color: #ffffff
+    float: left
+    letter-spacing: 2px
+    margin-top: 0
+    span
+      padding-left: 9px
+      padding-right: 9px
+      display: inline-block
+      //background-color: #fff
+      //background-color: rgba(255,255,255,0.8)
+  p
+    font-size: 1em
+    //color: #505050
+    color: #ffffff
+    font-weight: 400
+    margin-bottom: 42px
+    letter-spacing: 1px
+    text-align: center
+    span
+      //background-color: #fff
+      padding: 3px 0px
+      //background-color: rgba(255,255,255,0.8)
+  .button
+    text-align: center
+    width: 50%
+    margin-left: 25%
+    color: #505050
+    letter-spacing: 2px
+    //border: solid 1px #ffffff
+    //border-radius: 5px
+    //background-color: rgba(255,255,255,0.8)
+    background-color: rgba(253, 236, 10, 1)
+    padding: 10px
+    &:hover
+      background-color: rgba(253, 236, 10, 1)
+      cursor: pointer
+
+.menu
+  font-size: 0.8em
+  float: right
+  margin: 0
+  letter-spacing: 2px
+  background-color: #ffffff
+  width: 100%
+  display: inline-block
+  text-decoration: none
+  text-align: center
+  font-family: 'Raleway Cyr', serif
+  text-transform: uppercase
+  font-weight: 500
+  color: #505050
+  li
+    display: inline-block
+    margin: 0
+    padding: 20px
+    padding-left: 15px
+    padding-right: 15px
+    transition: 0.1s
+    &:last-child
+      text-decoration: dotted
+    &:hover
+      background-color: rgba(0, 0, 0, 0.3)
+      transition: 0.1s
+      cursor: pointer
+    img
+      width: 50px
+      margin-top: -50%
+      @include transform(translateY(15%))
+      padding-right: 10px
+
+
+.menu-bottom
+  position: absolute
+  top: 100%
+  @include transform(translateY(-100%))
+  font-size: 0.6em
+  float: right
+  margin: 0
+  padding: 0
+  letter-spacing: 2px
+  background-color: #ffffff
+  width: 100%
+  display: inline-block
+  text-decoration: none
+  text-align: center
+  font-family: 'Raleway Cyr', serif
+  text-transform: uppercase
+  font-weight: 500
+  color: #505050
+  li
+    display: inline-block
+    margin: 0
+    padding: 20px
+    transition: 0.1s
+    &:hover
+      background-color: rgba(0, 0, 0, 0.3)
+      transition: 0.1s
+      cursor: pointer
