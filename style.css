@@ -181,7 +181,7 @@ body {
     color: #505050;
     font-size: 2em;
     font-family: "Museo Sans Cyr", sans-serif; }
-  .two .two-block {
+  .two .block {
     background-color: #fff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -194,13 +194,13 @@ body {
     -o-transform: translateZ(0);
     transform: translateZ(0);
     transition: box-shadow 0.25s ease-in; }
-    .two .two-block:hover {
+    .two .block:hover {
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
-    .two .two-block img {
+    .two .block img {
       width: 50%;
       margin-left: 25%;
       margin-top: 5%; }
-    .two .two-block p {
+    .two .block p {
       text-align: center;
       font-size: 1.4em;
       font-weight: 100;
@@ -246,30 +246,5 @@ body {
     background-color: pink; }
   .three .three-three {
     background-color: hotpink; }
-
-.four {
-  background-color: #F9F9F9; }
-  .four .four-title {
-    width: 100%;
-    text-align: center;
-    color: #505050;
-    font-size: 2em;
-    font-family: "Museo Sans Cyr", sans-serif; }
-  .four .four-block {
-    background-color: #fff;
-    margin-bottom: 10px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    box-shadow: 0 1px 2px #999;
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
-    transform: translateZ(0);
-    transition: box-shadow 0.25s ease-in; }
-    .four .four-block:hover {
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
 
 /*# sourceMappingURL=style.css.map */

@@ -195,7 +195,7 @@ body
     color: #505050
     font-size: 2em
     font-family: "Museo Sans Cyr", sans-serif
-  .two-block
+  .block
     background-color: #fff
     //border: solid 1px #505050
     @include border-top-radius(5px)
@@ -250,23 +250,3 @@ body
     background-color: pink
   .three-three
     background-color: hotpink
-
-.four
-  background-color: #F9F9F9
-  .four-title
-    width: 100%
-    text-align: center
-    color: #505050
-    font-size: 2em
-    font-family: "Museo Sans Cyr", sans-serif
-  .four-block
-    background-color: #fff
-    margin-bottom: 10px
-    //border: solid 1px #505050
-    @include border-top-radius(5px)
-    @include border-bottom-radius(5px)
-    box-shadow: 0 1px 2px #999
-    @include transform(translateZ(0))
-    transition: box-shadow 0.25s ease-in
-    &:hover
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3)
