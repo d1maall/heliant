@@ -238,6 +238,13 @@ body {
     text-align: center; }
 
 .three {
-  background-color: #333333; }
+  background-color: #333333;
+  color: #ffffff; }
+  .three .three-one {
+    background-color: lightpink; }
+  .three .three-two {
+    background-color: pink; }
+  .three .three-three {
+    background-color: hotpink; }
 
 /*# sourceMappingURL=style.css.map */
