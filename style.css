@@ -230,7 +230,8 @@ body {
     transform: translateZ(0);
     transition: box-shadow 0.25s ease-in; }
     .two .two-button:hover {
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer; }
   .two .two-text {
     margin-top: 2%;
     font-family: "Raleway Cyr", sans-serif;
@@ -242,9 +243,24 @@ body {
   color: #ffffff; }
   .three .three-one {
     background-color: lightpink; }
+    .three .three-one .three-one-content {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      background-color: #fff; }
   .three .three-two {
-    background-color: pink; }
+    background-color: lightpink; }
+    .three .three-two .three-two-content {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      background-color: #fff; }
   .three .three-three {
-    background-color: hotpink; }
+    background-color: lightpink; }
+    .three .three-three .three-three-content {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      background-color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
