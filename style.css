@@ -187,7 +187,15 @@ body {
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24); }
+    box-shadow: 0 1px 2px #999;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: box-shadow 0.25s ease-in; }
+    .two .block:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
     .two .block img {
       width: 50%;
       margin-left: 25%;
@@ -203,17 +211,31 @@ body {
     padding-bottom: 10px;
     background-color: #fdec0a;
     margin-top: 30px;
+    margin-bottom: 30px;
     width: 30%;
     margin-left: 35%;
     text-align: center;
     letter-spacing: 1px;
     font-size: 1.5em;
     color: #505050;
+    box-shadow: 0 1px 2px #999;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24); }
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: box-shadow 0.25s ease-in; }
+    .two .two-button:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
+  .two .two-text {
+    margin-top: 2%;
+    font-family: "Raleway Cyr", sans-serif;
+    font-size: 1.5em;
+    text-align: center; }
 
 .three {
   background-color: #333333; }
