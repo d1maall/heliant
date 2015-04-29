@@ -199,6 +199,9 @@ body {
       font-family: "Raleway Cyr";
       color: #505050; }
   .two .two-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fdec0a;
     margin-top: 30px;
     width: 30%;
     margin-left: 35%;
@@ -206,11 +209,11 @@ body {
     letter-spacing: 1px;
     font-size: 1.5em;
     color: #505050;
-    border: solid 1px #505050;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px; }
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24); }
 
 .three {
   background-color: #333333; }
