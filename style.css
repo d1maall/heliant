@@ -11,14 +11,14 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: "Raleway Cyr", sans-serif; }
-
-.head {
-  position: absolute;
+  font-family: "Raleway Cyr", sans-serif;
   background: url("img/bg7.jpg");
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; }
+
+.head {
+  position: absolute;
   height: 100%;
   width: 100%; }
 
@@ -174,15 +174,15 @@ body {
       cursor: pointer; }
 
 .two {
-  background-color: #505050; }
+  background-color: #ffffff; }
   .two .two-title {
     width: 100%;
     text-align: center;
-    color: #ffffff;
+    color: #505050;
     font-size: 2em;
     font-family: "Museo Sans Cyr", sans-serif; }
   .two .block {
-    border: solid 1px #ffffff;
+    border: solid 1px #505050;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -194,8 +194,8 @@ body {
     text-align: center;
     letter-spacing: 1px;
     font-size: 1.5em;
-    color: #ffffff;
-    border: solid 1px #ffffff;
+    color: #505050;
+    border: solid 1px #505050;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
