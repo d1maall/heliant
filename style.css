@@ -174,7 +174,7 @@ body {
       cursor: pointer; }
 
 .two {
-  background-color: #ffffff; }
+  background-color: #F9F9F9; }
   .two .two-title {
     width: 100%;
     text-align: center;
@@ -182,11 +182,22 @@ body {
     font-size: 2em;
     font-family: "Museo Sans Cyr", sans-serif; }
   .two .block {
-    border: solid 1px #505050;
+    background-color: #fff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px; }
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24); }
+    .two .block img {
+      width: 50%;
+      margin-left: 25%;
+      margin-top: 5%; }
+    .two .block p {
+      text-align: center;
+      font-size: 1.4em;
+      font-weight: 100;
+      font-family: "Raleway Cyr";
+      color: #505050; }
   .two .two-button {
     margin-top: 30px;
     width: 30%;
