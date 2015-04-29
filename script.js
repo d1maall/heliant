@@ -4,6 +4,6 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
         navigation: true,
-        fitToSection: false
+        scrollOverflow: true
     });
 });
