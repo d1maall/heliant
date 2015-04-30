@@ -174,13 +174,35 @@ body {
       cursor: pointer; }
 
 .two {
-  background-color: #F9F9F9; }
+  background-color: #ffffff; }
   .two .two-title {
     width: 100%;
     text-align: center;
-    color: #505050;
-    font-size: 2em;
-    font-family: "Museo Sans Cyr", sans-serif; }
+    color: #ffffff;
+    font-size: 1.5em;
+    font-family: "Museo Sans Cyr", sans-serif;
+    background-color: #62c2cc; }
+    .two .two-title h1 {
+      margin: 0 0;
+      padding-top: 5px;
+      padding-bottom: 20px; }
+  .two .stripes {
+    margin-top: -6px;
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    margin-bottom: 5%; }
+    .two .stripes:after {
+      content: " ";
+      display: block;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 55px;
+      background: linear-gradient(transparent 0%, transparent 0%), linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent linear-gradient(135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%;
+      background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-45deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%;
+      background-repeat: repeat-x;
+      background-size: 0px 100%, 15px 27px, 15px 27px; }
   .two .two-block {
     background-color: #fff;
     border-top-left-radius: 5px;
@@ -242,33 +264,41 @@ body {
   background-color: #333333;
   color: #ffffff; }
   .three .three-one {
-    background-color: lightpink; }
+    background-color: #62c2cc; }
     .three .three-one .three-one-content {
       width: 10px;
       height: 10px;
       position: absolute;
       background-color: #fff; }
   .three .three-two {
-    background-color: lightpink; }
+    background-color: #62c2cc; }
     .three .three-two .three-two-content {
       width: 10px;
       height: 10px;
       position: absolute;
       background-color: #fff; }
   .three .three-three {
-    background-color: lightpink; }
+    background-color: #62c2cc; }
 
 .four {
   background-color: #F9F9F9; }
   .four .four-title {
     width: 100%;
     text-align: center;
-    color: #505050;
-    font-size: 2em;
+    color: #ffffff;
+    background-color: #62c2cc;
+    font-size: 1.5em;
     font-family: "Museo Sans Cyr", sans-serif; }
+    .four .four-title h1 {
+      margin: 0 0;
+      padding-top: 5px;
+      padding-bottom: 20px; }
   .four .four-block {
     background-color: #fff;
     margin-bottom: 10px;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    font-family: "Raleway Cyr", sans-serif;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -282,5 +312,67 @@ body {
     transition: box-shadow 0.25s ease-in; }
     .four .four-block:hover {
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
+    .four .four-block .four-number img {
+      width: 40%;
+      margin-left: 30%;
+      margin-top: 5%; }
+    .four .four-block .four-sm-button {
+      margin: 5% 10%;
+      padding: 10px 5px;
+      text-align: center;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      box-shadow: 0 1px 2px #999;
+      background-color: #FFFDE7; }
+    .four .four-block h2 {
+      text-align: center; }
+    .four .four-block p {
+      text-align: center;
+      margin-left: 10%;
+      margin-right: 10%; }
+  .four .four-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffeb3b;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    color: #505050;
+    box-shadow: 0 1px 2px #999;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: box-shadow 0.25s ease-in; }
+    .four .four-button:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer; }
+  .four .stripes {
+    margin-top: -6px;
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1)); }
+    .four .stripes:after {
+      content: " ";
+      display: block;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 55px;
+      background: linear-gradient(transparent 0%, transparent 0%), linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent linear-gradient(135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%;
+      background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-45deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%;
+      background-repeat: repeat-x;
+      background-size: 0px 100%, 15px 27px, 15px 27px; }
 
 /*# sourceMappingURL=style.css.map */
