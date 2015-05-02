@@ -265,6 +265,14 @@ body {
 .three {
   background-color: #333333;
   color: #ffffff; }
+  .three .three-title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    font-family: "Museo Sans Cyr", sans-serif;
+    z-index: 2; }
   .three .three-one {
     background-color: #62c2cc; }
     .three .three-one .three-one-content {
