@@ -318,11 +318,38 @@ body
     .three-three
       .three-three-content
         +three-content
+    .three-slide-title
+      +title($gray,transparent)
+    .three-slide-text
+      text-align: center
+    +button
+    .col-md-1
+      padding: 0
+    .col-md-5
+      padding: 0
     .three-block-sm
-      background-color: red
+      font-size: 4em
+      //margin-top: 20px
+      text-align: center
+      color: $light-gray
     .three-block-big
-      background-color: #23527c
-
+      .title-case
+        +title($gray,transparent)
+        font-size: 1.2em
+      .block-case
+        img
+          width: 15%
+          margin-left: 15%
+          margin-top: 9px
+          +drop-shadow(0.4)
+        p
+          margin-left: 15%
+          font-size: 1em
+          color: $light-gray
+    .first-block
+      border-right: solid 2px $gray
+    .second-block
+      border-left: solid 2px $gray
 .four
   background-color: $white
   .four-title

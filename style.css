@@ -311,10 +311,79 @@ body {
     height: 10px;
     position: absolute;
     background-color: #ffffff; }
+  .three .three-row-2 .three-slide-title {
+    width: 100%;
+    text-align: center;
+    color: #505050;
+    background-color: transparent;
+    font-size: 1.5em;
+    font-family: "Museo Sans Cyr", sans-serif; }
+    .three .three-row-2 .three-slide-title h1 {
+      margin: 0 0;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  .three .three-row-2 .three-slide-text {
+    text-align: center; }
+  .three .three-row-2 .button {
+    padding-top: 10px;
+    background-color: #ffeb3b;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+    font-size: 1.5em;
+    color: #505050;
+    letter-spacing: 1px;
+    box-shadow: 0 1px 2px #999999;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: box-shadow 0.25s ease-in; }
+    .three .three-row-2 .button:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer; }
+  .three .three-row-2 .col-md-1 {
+    padding: 0; }
+  .three .three-row-2 .col-md-5 {
+    padding: 0; }
   .three .three-row-2 .three-block-sm {
-    background-color: red; }
-  .three .three-row-2 .three-block-big {
-    background-color: #23527c; }
+    font-size: 4em;
+    text-align: center;
+    color: #999999; }
+  .three .three-row-2 .three-block-big .title-case {
+    width: 100%;
+    text-align: center;
+    color: #505050;
+    background-color: transparent;
+    font-size: 1.5em;
+    font-family: "Museo Sans Cyr", sans-serif;
+    font-size: 1.2em; }
+    .three .three-row-2 .three-block-big .title-case h1 {
+      margin: 0 0;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  .three .three-row-2 .three-block-big .block-case img {
+    width: 15%;
+    margin-left: 15%;
+    margin-top: 9px;
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.4));
+    -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.4)); }
+  .three .three-row-2 .three-block-big .block-case p {
+    margin-left: 15%;
+    font-size: 1em;
+    color: #999999; }
+  .three .three-row-2 .first-block {
+    border-right: solid 2px #505050; }
+  .three .three-row-2 .second-block {
+    border-left: solid 2px #505050; }
 
 .four {
   background-color: #ffffff; }
