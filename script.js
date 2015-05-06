@@ -5,6 +5,10 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
         navigation: false,
         scrollOverflow: true,
+        controlArrows: false,
+        css3: true,
+        scrollingSpeed: 700,
+        easingcss3: 'ease-in-out',
         afterRender: function(){
             var titleHeight = $(".three-row-1").height();
 
@@ -27,9 +31,11 @@ $(document).ready(function() {
                 $.fn.fullpage.moveSlideRight();
             }, 4000);*/
         },
-        controlArrows: false,
-        css3: true,
-        scrollingSpeed: 700,
-        easingcss3: 'ease-in-out'
+        afterLoad: function(anchorLink, index){
+            if(index == 6){
+                //alert("Section 6 ended loading");
+                $(".six-container-title").addClass("position-fixed");
+            }
+        }
     });
 });
