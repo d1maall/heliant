@@ -179,9 +179,9 @@ body {
     width: 100%;
     text-align: center;
     color: #ffffff;
+    background-color: #62c2cc;
     font-size: 1.5em;
-    font-family: "Museo Sans Cyr", sans-serif;
-    background-color: #62c2cc; }
+    font-family: "Museo Sans Cyr", sans-serif; }
     .two .two-title h1 {
       margin: 0 0;
       padding-top: 5px;
@@ -231,18 +231,18 @@ body {
       font-weight: 100;
       font-family: "Raleway Cyr";
       color: #505050; }
-  .two .two-button {
+  .two .button {
     padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #fdec0a;
+    background-color: #ffeb3b;
     margin-top: 30px;
-    margin-bottom: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
     width: 30%;
     margin-left: 35%;
     text-align: center;
-    letter-spacing: 1px;
     font-size: 1.5em;
     color: #505050;
+    letter-spacing: 1px;
     box-shadow: 0 1px 2px #999999;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -254,7 +254,7 @@ body {
     -o-transform: translateZ(0);
     transform: translateZ(0);
     transition: box-shadow 0.25s ease-in; }
-    .two .two-button:hover {
+    .two .button:hover {
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       cursor: pointer; }
   .two .two-text {
@@ -264,35 +264,48 @@ body {
     text-align: center; }
 
 .three {
-  background-color: #333333;
-  color: #ffffff; }
-  .three .three-title {
-    position: absolute;
+  background-color: #62c2cc; }
+  .three .three-row-1 .three-title {
     width: 100%;
     text-align: center;
-    color: #ffffff;
+    color: #62c2cc;
+    background-color: #ffffff;
     font-size: 1.5em;
-    font-family: "Museo Sans Cyr", sans-serif;
-    z-index: 2; }
-  .three .three-one {
-    background-color: #62c2cc; }
-    .three .three-one .three-one-content {
-      width: 10px;
-      height: 10px;
-      position: absolute;
-      background-color: #fff; }
-  .three .three-two {
-    background-color: #62c2cc; }
-    .three .three-two .three-two-content {
-      width: 10px;
-      height: 10px;
-      position: absolute;
-      background-color: #fff; }
-  .three .three-three {
-    background-color: #62c2cc; }
+    font-family: "Museo Sans Cyr", sans-serif; }
+    .three .three-row-1 .three-title h1 {
+      margin: 0 0;
+      padding-top: 5px;
+      padding-bottom: 20px; }
+  .three .three-row-1 .stripes {
+    margin-top: -6px;
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    margin-bottom: 5px; }
+    .three .three-row-1 .stripes:after {
+      content: " ";
+      display: block;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 55px;
+      background: linear-gradient(transparent 0%, transparent 0%), linear-gradient(-135deg, #ffffff 33.33%, transparent 33.33%) 0 0%, transparent linear-gradient(135deg, #ffffff 33.33%, transparent 33.33%) 0 0%;
+      background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-45deg, #ffffff 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(-135deg, #ffffff 33.33%, transparent 33.33%) 0 0%;
+      background-repeat: repeat-x;
+      background-size: 0px 100%, 15px 27px, 15px 27px; }
+  .three .three-row-2 .three-one .three-one-content {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #ffffff; }
+  .three .three-row-2 .three-two .three-two-content {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #ffffff; }
 
 .four {
-  background-color: #F9F9F9; }
+  background-color: #ffffff; }
   .four .four-title {
     width: 100%;
     text-align: center;
@@ -305,7 +318,7 @@ body {
       padding-top: 5px;
       padding-bottom: 20px; }
   .four .four-block {
-    background-color: #fff;
+    background-color: #ffffff;
     margin-bottom: 10px;
     padding-top: 7%;
     padding-bottom: 7%;
@@ -323,38 +336,24 @@ body {
     transition: box-shadow 0.25s ease-in; }
     .four .four-block:hover {
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
-    .four .four-block .four-number img {
-      width: 40%;
-      margin-left: 30%;
-      margin-top: 5%; }
-    .four .four-block .four-sm-button {
-      margin: 5% 10%;
-      padding: 10px 5px;
-      text-align: center;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-      box-shadow: 0 1px 2px #999999;
-      background-color: #FFFDE7; }
     .four .four-block h3 {
       text-align: center; }
     .four .four-block p {
       text-align: center;
       margin-left: 10%;
       margin-right: 10%; }
-  .four .four-button {
+  .four .button {
     padding-top: 10px;
-    padding-bottom: 10px;
     background-color: #ffeb3b;
     margin-top: 30px;
+    padding-bottom: 10px;
     margin-bottom: 25px;
     width: 30%;
     margin-left: 35%;
     text-align: center;
-    letter-spacing: 1px;
     font-size: 1.5em;
     color: #505050;
+    letter-spacing: 1px;
     box-shadow: 0 1px 2px #999999;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -366,13 +365,14 @@ body {
     -o-transform: translateZ(0);
     transform: translateZ(0);
     transition: box-shadow 0.25s ease-in; }
-    .four .four-button:hover {
+    .four .button:hover {
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       cursor: pointer; }
   .four .stripes {
     margin-top: -6px;
     filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
-    -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1)); }
+    -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    margin-bottom: 5px; }
     .four .stripes:after {
       content: " ";
       display: block;
@@ -383,6 +383,170 @@ body {
       height: 55px;
       background: linear-gradient(transparent 0%, transparent 0%), linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent linear-gradient(135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%;
       background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-45deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%;
+      background-repeat: repeat-x;
+      background-size: 0px 100%, 15px 27px, 15px 27px; }
+
+.five {
+  background-color: #62c2cc; }
+  .five .five-title {
+    width: 100%;
+    text-align: center;
+    color: #62c2cc;
+    background-color: #ffffff;
+    font-size: 1.5em;
+    font-family: "Museo Sans Cyr", sans-serif; }
+    .five .five-title h1 {
+      margin: 0 0;
+      padding-top: 5px;
+      padding-bottom: 20px; }
+  .five .stripes {
+    margin-top: -6px;
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    margin-bottom: 5px; }
+    .five .stripes:after {
+      content: " ";
+      display: block;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 55px;
+      background: linear-gradient(transparent 0%, transparent 0%), linear-gradient(-135deg, #ffffff 33.33%, transparent 33.33%) 0 0%, transparent linear-gradient(135deg, #ffffff 33.33%, transparent 33.33%) 0 0%;
+      background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-45deg, #ffffff 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(-135deg, #ffffff 33.33%, transparent 33.33%) 0 0%;
+      background-repeat: repeat-x;
+      background-size: 0px 100%, 15px 27px, 15px 27px; }
+
+.six {
+  background-color: #ffffff; }
+  .six .six-title {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #62c2cc;
+    font-size: 1.5em;
+    font-family: "Museo Sans Cyr", sans-serif; }
+    .six .six-title h1 {
+      margin: 0 0;
+      padding-top: 5px;
+      padding-bottom: 20px; }
+  .six .stripes {
+    margin-top: -6px;
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    margin-bottom: 5px; }
+    .six .stripes:after {
+      content: " ";
+      display: block;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 55px;
+      background: linear-gradient(transparent 0%, transparent 0%), linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent linear-gradient(135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%;
+      background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-45deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%;
+      background-repeat: repeat-x;
+      background-size: 0px 100%, 15px 27px, 15px 27px; }
+
+.seven {
+  background-color: #ffffff; }
+
+.eight {
+  background-color: #ffffff; }
+
+.nine {
+  background-color: #62c2cc; }
+  .nine .nine-title {
+    width: 100%;
+    text-align: center;
+    color: #62c2cc;
+    background-color: #ffffff;
+    font-size: 1.5em;
+    font-family: "Museo Sans Cyr", sans-serif; }
+    .nine .nine-title h1 {
+      margin: 0 0;
+      padding-top: 5px;
+      padding-bottom: 20px; }
+  .nine .stripes {
+    margin-top: -6px;
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    margin-bottom: 5px; }
+    .nine .stripes:after {
+      content: " ";
+      display: block;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 55px;
+      background: linear-gradient(transparent 0%, transparent 0%), linear-gradient(-135deg, #ffffff 33.33%, transparent 33.33%) 0 0%, transparent linear-gradient(135deg, #ffffff 33.33%, transparent 33.33%) 0 0%;
+      background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-45deg, #ffffff 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(-135deg, #ffffff 33.33%, transparent 33.33%) 0 0%;
+      background-repeat: repeat-x;
+      background-size: 0px 100%, 15px 27px, 15px 27px; }
+
+.ten {
+  background-color: #ffffff; }
+  .ten .ten-title {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #62c2cc;
+    font-size: 1.5em;
+    font-family: "Museo Sans Cyr", sans-serif; }
+    .ten .ten-title h1 {
+      margin: 0 0;
+      padding-top: 5px;
+      padding-bottom: 20px; }
+  .ten .stripes {
+    margin-top: -6px;
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    margin-bottom: 5px; }
+    .ten .stripes:after {
+      content: " ";
+      display: block;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 55px;
+      background: linear-gradient(transparent 0%, transparent 0%), linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent linear-gradient(135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%;
+      background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-45deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%;
+      background-repeat: repeat-x;
+      background-size: 0px 100%, 15px 27px, 15px 27px; }
+
+.eleven {
+  background-color: #ffffff; }
+
+.twelve {
+  background-color: #62c2cc; }
+  .twelve .twelve-title {
+    width: 100%;
+    text-align: center;
+    color: #62c2cc;
+    background-color: #ffffff;
+    font-size: 1.5em;
+    font-family: "Museo Sans Cyr", sans-serif; }
+    .twelve .twelve-title h1 {
+      margin: 0 0;
+      padding-top: 5px;
+      padding-bottom: 20px; }
+  .twelve .stripes {
+    margin-top: -6px;
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    margin-bottom: 5px; }
+    .twelve .stripes:after {
+      content: " ";
+      display: block;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 55px;
+      background: linear-gradient(transparent 0%, transparent 0%), linear-gradient(-135deg, #ffffff 33.33%, transparent 33.33%) 0 0%, transparent linear-gradient(135deg, #ffffff 33.33%, transparent 33.33%) 0 0%;
+      background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-45deg, #ffffff 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(-135deg, #ffffff 33.33%, transparent 33.33%) 0 0%;
       background-repeat: repeat-x;
       background-size: 0px 100%, 15px 27px, 15px 27px; }
 

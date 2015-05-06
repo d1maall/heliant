@@ -17,6 +17,57 @@ $title-font-size: 1.5em
   background: linear-gradient(transparent 0%, transparent 0%), linear-gradient(-135deg, $color 33.33%, transparent 33.33%) 0 0%, transparent linear-gradient(135deg, $color 33.33%, transparent 33.33%) 0 0%
   background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-45deg, $color 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(-135deg, $color 33.33%, transparent 33.33%) 0 0%
 
+=stripes($color)
+  .stripes
+    margin-top: -6px
+    +drop-shadow(0.1)
+    margin-bottom: 5px
+    &:after
+      content: " "
+      display: block
+      position: relative
+      top: 0px
+      left: 0px
+      width: 100%
+      height: 55px
+      +linear-gradient($color)
+      background-repeat: repeat-x
+      background-size: 0px 100%, 15px 27px, 15px 27px
+
+=title($text-color, $backgroud-color)
+  width: 100%
+  text-align: center
+  color: $text-color
+  background-color: $backgroud-color
+  font-size: $title-font-size
+  font-family: "Museo Sans Cyr", sans-serif
+  h1
+    margin: 0 0
+    padding-top: 5px
+    padding-bottom: 20px
+
+=button
+  .button
+    padding-top: 10px
+    background-color: #ffeb3b
+    margin-top: 30px
+    padding-bottom: 10px
+    margin-bottom: 25px
+    width: 30%
+    margin-left: 35%
+    text-align: center
+    font-size: 1.5em
+    color: $gray
+    letter-spacing: 1px
+    box-shadow: 0 1px 2px $light-gray
+    @include border-top-radius(5px)
+    @include border-bottom-radius(5px)
+    @include transform(translateZ(0))
+    transition: box-shadow 0.25s ease-in
+    &:hover
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3)
+      cursor: pointer
+
 
 html
   margin: 0 0 0 0
@@ -206,31 +257,8 @@ body
 .two
   background-color: $white
   .two-title
-    width: 100%
-    text-align: center
-    color: $white
-    font-size: $title-font-size
-    font-family: "Museo Sans Cyr", sans-serif
-    background-color: $blue
-    h1
-      margin: 0 0
-      padding-top: 5px
-      padding-bottom: 20px
-  .stripes
-    margin-top: -6px
-    +drop-shadow(0.1)
-    margin-bottom: 5px
-    &:after
-      content: " "
-      display: block
-      position: relative
-      top: 0px
-      left: 0px
-      width: 100%
-      height: 55px
-      +linear-gradient($blue)
-      background-repeat: repeat-x
-      background-size: 0px 100%, 15px 27px, 15px 27px
+    +title($white,$blue)
+  +stripes($blue)
   .two-block
     background-color: #fff
     @include border-top-radius(5px)
@@ -252,27 +280,7 @@ body
       font-weight: 100
       font-family: "Raleway Cyr"
       color: $gray
-  .two-button
-    padding-top: 10px
-    padding-bottom: 10px
-    background-color: $yellow
-    margin-top: 30px
-    margin-bottom: 30px
-    width: 30%
-    margin-left: 35%
-    text-align: center
-    letter-spacing: 1px
-    font-size: 1.5em
-    color: $gray
-    box-shadow: 0 1px 2px $light-gray
-    //border: solid 1px $gray
-    @include border-top-radius(5px)
-    @include border-bottom-radius(5px)
-    @include transform(translateZ(0))
-    transition: box-shadow 0.25s ease-in
-    &:hover
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3)
-      cursor: pointer
+  +button
   .two-text
     margin-top: 2%
     font-family: "Raleway Cyr", sans-serif
@@ -280,53 +288,44 @@ body
     text-align: center
 
 .three
-  background-color: #333333
-  color: $white
-  .three-title
-    position: absolute
-    width: 100%
-    text-align: center
-    color: $white
-    font-size: $title-font-size
-    font-family: "Museo Sans Cyr", sans-serif
-    z-index: 2
-  .three-one
-    background-color: $blue
-    .three-one-content
-      width: 10px
-      height: 10px
-      position: absolute
-      background-color: #fff
-  .three-two
-    background-color: $blue
-    .three-two-content
-      width: 10px
-      height: 10px
-      position: absolute
-      background-color: #fff
-  .three-three
-    background-color: $blue
+  background-color: $blue
+  //color: $white
+  .three-row-1
+    .three-title
+      //position: absolute
+      //z-index: 2
+      +title($blue,$white)
+    //.three-stripes-position
+      //position: absolute
+    +stripes($white)
+  .three-row-2
+    .three-one
+      //background-color: $blue
+      .three-one-content
+        width: 10px
+        height: 10px
+        position: absolute
+        background-color: $white
+    .three-two
+      //background-color: $blue
+      .three-two-content
+        width: 10px
+        height: 10px
+        position: absolute
+        background-color: $white
+    .three-three
+      //background-color: $blue
 
 .four
-  background-color: #F9F9F9
+  background-color: $white
   .four-title
-    width: 100%
-    text-align: center
-    color: $white
-    background-color: $blue
-    font-size: $title-font-size
-    font-family: "Museo Sans Cyr", sans-serif
-    h1
-      margin: 0 0
-      padding-top: 5px
-      padding-bottom: 20px
+    +title($white,$blue)
   .four-block
-    background-color: #fff
+    background-color: $white
     margin-bottom: 10px
     padding-top: 7%
     padding-bottom: 7%
     font-family: "Raleway Cyr", sans-serif
-    //border: solid 1px $gray
     @include border-top-radius(5px)
     @include border-bottom-radius(5px)
     box-shadow: 0 1px 2px $light-gray
@@ -334,71 +333,53 @@ body
     transition: box-shadow 0.25s ease-in
     &:hover
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3)
-    .four-number
-      //border: solid 1px
-      //@include border-top-radius(50%)
-      //@include border-bottom-radius(50%)
-      //box-shadow: 0 2px 4px $light-gray
-      //font-size: 2em
-      //text-align: center
-      //width: 1.5em
-      //height: 1.5em
-      //margin-left: 40%
-      //margin-top: 5%
-      img
-        width: 40%
-        margin-left: 30%
-        margin-top: 5%
-    .four-sm-button
-      //border: solid 1px $yellow
-      margin: 5% 10%
-      padding: 10px 5px
-      text-align: center
-      @include border-top-radius(5px)
-      @include border-bottom-radius(5px)
-      box-shadow: 0 1px 2px $light-gray
-      background-color: #FFFDE7
     h3
       text-align: center
     p
       text-align: center
       margin-left: 10%
       margin-right: 10%
-  .four-button
-    padding-top: 10px
-    padding-bottom: 10px
-    background-color: #ffeb3b
-    margin-top: 30px
-    margin-bottom: 25px
-    width: 30%
-    margin-left: 35%
-    text-align: center
-    letter-spacing: 1px
-    font-size: 1.5em
-    color: $gray
-    box-shadow: 0 1px 2px $light-gray
-    //border: solid 1px $gray
-    @include border-top-radius(5px)
-    @include border-bottom-radius(5px)
-    @include transform(translateZ(0))
-    transition: box-shadow 0.25s ease-in
-    &:hover
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3)
-      cursor: pointer
-  .stripes
-    margin-top: -6px
-    +drop-shadow(0.1)
-    &:after
-      content: " "
-      display: block
-      position: relative
-      top: 0px
-      left: 0px
-      width: 100%
-      height: 55px
-      +linear-gradient($blue)
-      background-repeat: repeat-x
-      background-size: 0px 100%, 15px 27px, 15px 27px
+  +button
+  +stripes($blue)
+
+.five
+  background-color: $blue
+  .five-title
+    +title($blue,$white)
+  +stripes($white)
+
+.six
+  background-color: $white
+  .six-title
+    +title($white,$blue)
+  +stripes($blue)
+
+.seven
+  background-color: $white
+
+.eight
+  background-color: $white
+
+.nine
+  background-color: $blue
+  .nine-title
+    +title($blue,$white)
+  +stripes($white)
+
+.ten
+  background-color: $white
+  .ten-title
+    +title($white,$blue)
+  +stripes($blue)
+
+.eleven
+  background-color: $white
+
+.twelve
+  background-color: $blue
+  .twelve-title
+    +title($blue,$white)
+  +stripes($white)
 
 .position-fixed
   position: fixed
