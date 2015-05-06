@@ -184,10 +184,10 @@ body {
     font-family: "Museo Sans Cyr", sans-serif; }
     .two .two-title h1 {
       margin: 0 0;
-      padding-top: 5px;
-      padding-bottom: 20px; }
+      padding-top: 10px;
+      padding-bottom: 10px; }
   .two .stripes {
-    margin-top: -6px;
+    margin-top: -7px;
     filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
     -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
     margin-bottom: 5px; }
@@ -261,7 +261,10 @@ body {
     margin-top: 2%;
     font-family: "Raleway Cyr", sans-serif;
     font-size: 1.5em;
-    text-align: center; }
+    text-align: center;
+    color: #505050;
+    font-weight: 100;
+    padding-top: 10px; }
 
 .three {
   background-color: #62c2cc; }
@@ -274,10 +277,10 @@ body {
     font-family: "Museo Sans Cyr", sans-serif; }
     .three .three-row-1 .three-title h1 {
       margin: 0 0;
-      padding-top: 5px;
-      padding-bottom: 20px; }
+      padding-top: 10px;
+      padding-bottom: 10px; }
   .three .three-row-1 .stripes {
-    margin-top: -6px;
+    margin-top: -7px;
     filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
     -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
     margin-bottom: 5px; }
@@ -303,6 +306,15 @@ body {
     height: 10px;
     position: absolute;
     background-color: #ffffff; }
+  .three .three-row-2 .three-three .three-three-content {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #ffffff; }
+  .three .three-row-2 .three-block-sm {
+    background-color: red; }
+  .three .three-row-2 .three-block-big {
+    background-color: #23527c; }
 
 .four {
   background-color: #ffffff; }
@@ -315,8 +327,8 @@ body {
     font-family: "Museo Sans Cyr", sans-serif; }
     .four .four-title h1 {
       margin: 0 0;
-      padding-top: 5px;
-      padding-bottom: 20px; }
+      padding-top: 10px;
+      padding-bottom: 10px; }
   .four .four-block {
     background-color: #ffffff;
     margin-bottom: 10px;
@@ -369,7 +381,7 @@ body {
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       cursor: pointer; }
   .four .stripes {
-    margin-top: -6px;
+    margin-top: -7px;
     filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
     -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
     margin-bottom: 5px; }
@@ -397,10 +409,10 @@ body {
     font-family: "Museo Sans Cyr", sans-serif; }
     .five .five-title h1 {
       margin: 0 0;
-      padding-top: 5px;
-      padding-bottom: 20px; }
+      padding-top: 10px;
+      padding-bottom: 10px; }
   .five .stripes {
-    margin-top: -6px;
+    margin-top: -7px;
     filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
     -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
     margin-bottom: 5px; }
@@ -419,34 +431,6 @@ body {
 
 .six {
   background-color: #ffffff; }
-  .six .six-title {
-    width: 100%;
-    text-align: center;
-    color: #ffffff;
-    background-color: #62c2cc;
-    font-size: 1.5em;
-    font-family: "Museo Sans Cyr", sans-serif; }
-    .six .six-title h1 {
-      margin: 0 0;
-      padding-top: 5px;
-      padding-bottom: 20px; }
-  .six .stripes {
-    margin-top: -6px;
-    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
-    -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
-    margin-bottom: 5px; }
-    .six .stripes:after {
-      content: " ";
-      display: block;
-      position: relative;
-      top: 0px;
-      left: 0px;
-      width: 100%;
-      height: 55px;
-      background: linear-gradient(transparent 0%, transparent 0%), linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent linear-gradient(135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%;
-      background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-45deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%;
-      background-repeat: repeat-x;
-      background-size: 0px 100%, 15px 27px, 15px 27px; }
 
 .seven {
   background-color: #ffffff; }
@@ -465,10 +449,10 @@ body {
     font-family: "Museo Sans Cyr", sans-serif; }
     .nine .nine-title h1 {
       margin: 0 0;
-      padding-top: 5px;
-      padding-bottom: 20px; }
+      padding-top: 10px;
+      padding-bottom: 10px; }
   .nine .stripes {
-    margin-top: -6px;
+    margin-top: -7px;
     filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
     -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
     margin-bottom: 5px; }
@@ -496,10 +480,10 @@ body {
     font-family: "Museo Sans Cyr", sans-serif; }
     .ten .ten-title h1 {
       margin: 0 0;
-      padding-top: 5px;
-      padding-bottom: 20px; }
+      padding-top: 10px;
+      padding-bottom: 10px; }
   .ten .stripes {
-    margin-top: -6px;
+    margin-top: -7px;
     filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
     -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
     margin-bottom: 5px; }
@@ -530,10 +514,10 @@ body {
     font-family: "Museo Sans Cyr", sans-serif; }
     .twelve .twelve-title h1 {
       margin: 0 0;
-      padding-top: 5px;
-      padding-bottom: 20px; }
+      padding-top: 10px;
+      padding-bottom: 10px; }
   .twelve .stripes {
-    margin-top: -6px;
+    margin-top: -7px;
     filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
     -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
     margin-bottom: 5px; }
@@ -550,10 +534,43 @@ body {
       background-repeat: repeat-x;
       background-size: 0px 100%, 15px 27px, 15px 27px; }
 
+.six-container-title {
+  display: none; }
+  .six-container-title .six-title {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #62c2cc;
+    font-size: 1.5em;
+    font-family: "Museo Sans Cyr", sans-serif; }
+    .six-container-title .six-title h1 {
+      margin: 0 0;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  .six-container-title .stripes {
+    margin-top: -7px;
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    margin-bottom: 5px; }
+    .six-container-title .stripes:after {
+      content: " ";
+      display: block;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 55px;
+      background: linear-gradient(transparent 0%, transparent 0%), linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent linear-gradient(135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%;
+      background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-45deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%;
+      background-repeat: repeat-x;
+      background-size: 0px 100%, 15px 27px, 15px 27px; }
+
 .position-fixed {
-  top: 0;
+  display: block;
   z-index: 9999;
   position: fixed;
-  height: 100px; }
+  left: 0;
+  margin-top: 0;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

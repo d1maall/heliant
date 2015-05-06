@@ -19,7 +19,7 @@ $title-font-size: 1.5em
 
 =stripes($color)
   .stripes
-    margin-top: -6px
+    margin-top: -7px
     +drop-shadow(0.1)
     margin-bottom: 5px
     &:after
@@ -43,8 +43,8 @@ $title-font-size: 1.5em
   font-family: "Museo Sans Cyr", sans-serif
   h1
     margin: 0 0
-    padding-top: 5px
-    padding-bottom: 20px
+    padding-top: 10px
+    padding-bottom: 10px
 
 =button
   .button
@@ -67,6 +67,13 @@ $title-font-size: 1.5em
     &:hover
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3)
       cursor: pointer
+
+=three-content
+  width: 10px
+  height: 10px
+  position: absolute
+  background-color: $white
+
 
 
 html
@@ -286,6 +293,9 @@ body
     font-family: "Raleway Cyr", sans-serif
     font-size: 1.5em
     text-align: center
+    color: $gray
+    font-weight: 100
+    padding-top: 10px
 
 .three
   background-color: $blue
@@ -300,21 +310,18 @@ body
     +stripes($white)
   .three-row-2
     .three-one
-      //background-color: $blue
       .three-one-content
-        width: 10px
-        height: 10px
-        position: absolute
-        background-color: $white
+        +three-content
     .three-two
-      //background-color: $blue
       .three-two-content
-        width: 10px
-        height: 10px
-        position: absolute
-        background-color: $white
+        +three-content
     .three-three
-      //background-color: $blue
+      .three-three-content
+        +three-content
+    .three-block-sm
+      background-color: red
+    .three-block-big
+      background-color: #23527c
 
 .four
   background-color: $white
@@ -350,9 +357,9 @@ body
 
 .six
   background-color: $white
-  .six-title
-    +title($white,$blue)
-  +stripes($blue)
+  //.six-title
+  //  +title($white,$blue)
+  //+stripes($blue)
 
 .seven
   background-color: $white
@@ -381,13 +388,23 @@ body
     +title($blue,$white)
   +stripes($white)
 
+
+.six-container-title
+  display: none
+  .six-title
+    +title($white,$blue)
+  +stripes($blue)
+
+
 .position-fixed
-  top: 0
+  //top: 0
+  display: block
   z-index: 9999
   position: fixed
-  height: 100px
-
-
+  //height: 100px
+  left: 0
+  margin-top: 0
+  width: 100%
 
 
 
