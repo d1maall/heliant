@@ -32,10 +32,32 @@ $(document).ready(function() {
             }, 4000);*/
         },
         afterLoad: function(anchorLink, index){
-            if(index == 6){
-                //alert("Section 6 ended loading");
+            if(index == 5){
+                $(".six-container-title").removeClass("six-container-title-up");
+            }
+        },
+        onLeave: function(index, nextIndex, direction){
+            if (index == 5 && direction == "down"){
                 $(".six-container-title").addClass("position-fixed");
             }
+
+            if (index == 8 && direction == "down"){
+                $(".six-container-title").removeClass("position-fixed");
+                $(".six-container-title").addClass("six-container-title-up");
+            }
+
+            if (index == 9 && direction == "up"){
+                $(".six-container-title").addClass("position-fixed");
+                $(".six-container-title").removeClass("six-container-title-up");
+            }
+
+            if(index == 6 && direction =='up'){
+                $(".six-container-title").removeClass("position-fixed");
+                //$(".six-container-title").removeClass("six-container-title-up")
+            }
+            /*if(index == 8 && direction =='down'){
+                $(".six-container-title").removeClass("position-fixed");
+            }*/
         }
     });
 });

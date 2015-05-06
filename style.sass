@@ -390,20 +390,33 @@ body
 
 
 .six-container-title
-  display: none
+  position: absolute
+  @include transition(all 700ms ease-in-out)
+  top: 100%
+  //display: none
   .six-title
     +title($white,$blue)
   +stripes($blue)
+  width: 100%
+  z-index: 9999
 
+.six-container-title-up
+  position: absolute
+  //transition: 0.7s ease-in-out
+  @include transition(all 700ms ease-in-out)
+  top: -100%
+  width: 100%
+  z-index: 9999
 
 .position-fixed
-  //top: 0
-  display: block
+  @include transition(all 700ms ease-in-out)
+  top: 0px
+  //display: block
   z-index: 9999
+  //position: absolute
   position: fixed
-  //height: 100px
   left: 0
-  margin-top: 0
+  //margin-top: 0
   width: 100%
 
 
