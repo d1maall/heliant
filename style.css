@@ -385,4 +385,7 @@ body {
       background-repeat: repeat-x;
       background-size: 0px 100%, 15px 27px, 15px 27px; }
 
+.position-fixed {
+  position: fixed; }
+
 /*# sourceMappingURL=style.css.map */
