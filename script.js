@@ -26,6 +26,10 @@ $(document).ready(function() {
             /*setInterval(function () {
                 $.fn.fullpage.moveSlideRight();
             }, 4000);*/
-        }
+        },
+        controlArrows: false,
+        css3: true,
+        scrollingSpeed: 700,
+        easingcss3: 'ease-in-out'
     });
 });
