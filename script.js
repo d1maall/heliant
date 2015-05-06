@@ -32,6 +32,10 @@ $(document).ready(function() {
             }, 4000);*/
         },
         afterLoad: function(anchorLink, index){
+            if (index == 2) {
+
+            }
+
             if(index == 5){
                 $(".six-container-title").removeClass("six-container-title-up");
             }
