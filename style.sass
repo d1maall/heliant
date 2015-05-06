@@ -2,6 +2,11 @@
 @import "http://webfonts.ru/import/ralewayc.css"
 @import "http://webfonts.ru/import/museocyr.css"
 
+$yellow: #fdec0a
+$blue: #62c2cc
+$white: #ffffff
+$light-gray: #999999
+$gray: #505050
 
 html
   margin: 0 0 0 0
@@ -42,7 +47,7 @@ body
     text-align: center
     font-weight: 600
     //color: #2d2d2d
-    color: #ffffff
+    color: $white
     float: left
     letter-spacing: 2px
     margin-top: 0
@@ -55,8 +60,8 @@ body
       //background-color: rgba(255,255,255,0.8)
   p
     font-size: 1em
-    //color: #505050
-    color: #ffffff
+    //color: $gray
+    color: $white
     font-weight: 400
     margin-bottom: 42px
     letter-spacing: 1px
@@ -71,13 +76,13 @@ body
     width: 50%
     margin-left: 25%
     font-weight: 600
-    color: #505050
+    color: $gray
     letter-spacing: 2px
-    //border: solid 1px #ffffff
+    //border: solid 1px $white
     border-radius: 10px
     //background-color: rgba(255,255,255,0.8)
     //background-color: rgba(253, 236, 10, 1)
-    background-color: #fdec0a // Old browsers
+    background-color: $yellow // Old browsers
     padding: 20px
     //border: solid 5px #ffcf00
     i
@@ -101,7 +106,7 @@ body
   font-family: 'Museo Sans Cyr', serif
   //text-transform: uppercase
   font-weight: 500
-  color: #ffffff
+  color: $white
   li
     display: inline-block
     margin: 0%
@@ -117,9 +122,9 @@ body
       padding-top: 25px
       //padding-bottom: 10px
     &:last-child
-      border: solid 1px #fdec0a
-      color: #505050
-      background-color: #fdec0a
+      border: solid 1px $yellow
+      color: $gray
+      background-color: $yellow
       padding-top: 15px
       margin-left: 10px
       padding-bottom: 15px
@@ -156,7 +161,7 @@ body
   font-family: 'Museo Sans Cyr', serif
   //text-transform: uppercase
   font-weight: 500
-  color: #505050
+  color: $gray
   div
     display: inline-block
     width: 18%
@@ -166,7 +171,7 @@ body
     padding-top: 5px
     padding-bottom: 5px
     transition: 0.1s
-    background-color: #ffffff
+    background-color: $white
     border-top-left-radius: 10px
     border-top-right-radius: 10px
     text-align: center
@@ -187,15 +192,16 @@ body
       transition: 0.1s
       cursor: pointer
 
+
 .two
-  background-color: #ffffff
+  background-color: $white
   .two-title
     width: 100%
     text-align: center
-    color: #ffffff
+    color: $white
     font-size: 1.5em
     font-family: "Museo Sans Cyr", sans-serif
-    background-color: #62c2cc
+    background-color: $blue
     h1
       margin: 0 0
       padding-top: 5px
@@ -213,16 +219,16 @@ body
       left: 0px
       width: 100%
       height: 55px
-      background: linear-gradient(transparent 0%, transparent 0%), linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent linear-gradient(135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%
-      background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-45deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%
+      background: linear-gradient(transparent 0%, transparent 0%), linear-gradient(-135deg, $blue 33.33%, transparent 33.33%) 0 0%, transparent linear-gradient(135deg, $blue 33.33%, transparent 33.33%) 0 0%
+      background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-45deg, $blue 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(-135deg, $blue 33.33%, transparent 33.33%) 0 0%
       background-repeat: repeat-x
       background-size: 0px 100%, 15px 27px, 15px 27px
   .two-block
     background-color: #fff
-    //border: solid 1px #505050
+    //border: solid 1px $gray
     @include border-top-radius(5px)
     @include border-bottom-radius(5px)
-    box-shadow: 0 1px 2px #999
+    box-shadow: 0 1px 2px $light-gray
     @include transform(translateZ(0))
     transition: box-shadow 0.25s ease-in
     &:hover
@@ -232,17 +238,17 @@ body
       margin-left: 25%
       margin-top: 5%
       filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.4))
-      -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1))
+      -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.4))
     p
       text-align: center
       font-size: 1.4em
       font-weight: 100
       font-family: "Raleway Cyr"
-      color: #505050
+      color: $gray
   .two-button
     padding-top: 10px
     padding-bottom: 10px
-    background-color: #fdec0a
+    background-color: $yellow
     margin-top: 30px
     margin-bottom: 30px
     width: 30%
@@ -250,9 +256,9 @@ body
     text-align: center
     letter-spacing: 1px
     font-size: 1.5em
-    color: #505050
-    box-shadow: 0 1px 2px #999
-    //border: solid 1px #505050
+    color: $gray
+    box-shadow: 0 1px 2px $light-gray
+    //border: solid 1px $gray
     @include border-top-radius(5px)
     @include border-bottom-radius(5px)
     @include transform(translateZ(0))
@@ -268,39 +274,39 @@ body
 
 .three
   background-color: #333333
-  color: #ffffff
+  color: $white
   .three-title
     position: absolute
     width: 100%
     text-align: center
-    color: #ffffff
+    color: $white
     font-size: 2em
     font-family: "Museo Sans Cyr", sans-serif
     z-index: 2
   .three-one
-    background-color: #62c2cc
+    background-color: $blue
     .three-one-content
       width: 10px
       height: 10px
       position: absolute
       background-color: #fff
   .three-two
-    background-color: #62c2cc
+    background-color: $blue
     .three-two-content
       width: 10px
       height: 10px
       position: absolute
       background-color: #fff
   .three-three
-    background-color: #62c2cc
+    background-color: $blue
 
 .four
   background-color: #F9F9F9
   .four-title
     width: 100%
     text-align: center
-    color: #ffffff
-    background-color: #62c2cc
+    color: $white
+    background-color: $blue
     font-size: 1.5em
     font-family: "Museo Sans Cyr", sans-serif
     h1
@@ -313,10 +319,10 @@ body
     padding-top: 7%
     padding-bottom: 7%
     font-family: "Raleway Cyr", sans-serif
-    //border: solid 1px #505050
+    //border: solid 1px $gray
     @include border-top-radius(5px)
     @include border-bottom-radius(5px)
-    box-shadow: 0 1px 2px #999
+    box-shadow: 0 1px 2px $light-gray
     @include transform(translateZ(0))
     transition: box-shadow 0.25s ease-in
     &:hover
@@ -325,7 +331,7 @@ body
       //border: solid 1px
       //@include border-top-radius(50%)
       //@include border-bottom-radius(50%)
-      //box-shadow: 0 2px 4px #999
+      //box-shadow: 0 2px 4px $light-gray
       //font-size: 2em
       //text-align: center
       //width: 1.5em
@@ -337,13 +343,13 @@ body
         margin-left: 30%
         margin-top: 5%
     .four-sm-button
-      //border: solid 1px #fdec0a
+      //border: solid 1px $yellow
       margin: 5% 10%
       padding: 10px 5px
       text-align: center
       @include border-top-radius(5px)
       @include border-bottom-radius(5px)
-      box-shadow: 0 1px 2px #999
+      box-shadow: 0 1px 2px $light-gray
       background-color: #FFFDE7
     h3
       text-align: center
@@ -362,9 +368,9 @@ body
     text-align: center
     letter-spacing: 1px
     font-size: 1.5em
-    color: #505050
-    box-shadow: 0 1px 2px #999
-    //border: solid 1px #505050
+    color: $gray
+    box-shadow: 0 1px 2px $light-gray
+    //border: solid 1px $gray
     @include border-top-radius(5px)
     @include border-bottom-radius(5px)
     @include transform(translateZ(0))
@@ -384,8 +390,8 @@ body
       left: 0px
       width: 100%
       height: 55px
-      background: linear-gradient(transparent 0%, transparent 0%), linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent linear-gradient(135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%
-      background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-45deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%
+      background: linear-gradient(transparent 0%, transparent 0%), linear-gradient(-135deg, $blue 33.33%, transparent 33.33%) 0 0%, transparent linear-gradient(135deg, $blue 33.33%, transparent 33.33%) 0 0%
+      background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-45deg, $blue 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(-135deg, $blue 33.33%, transparent 33.33%) 0 0%
       background-repeat: repeat-x
       background-size: 0px 100%, 15px 27px, 15px 27px
 
