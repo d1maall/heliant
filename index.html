@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="libs/fullPage/jquery.fullPage.css" type="text/css"/>
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" href="libs/animate.css-master/animate.css"/>
-    <link rel="stylesheet" href="libs/rangeslider.js-develop/dist/rangeslider.css"/>
+    <link rel="stylesheet" href="libs/slider/jquery.range.css"/>
     <link rel="stylesheet" href="style.css" type="text/css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="libs/jquery.slimscroll.min.js"></script>
     <script src="libs/fullPage/jquery.fullPage.js"></script>
-    <script src="libs/rangeslider.js-develop/dist/rangeslider.js"></script>
+    <script src="libs/slider/jquery.range.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -260,8 +260,30 @@
         <div class="stripes"></div>
         <div class="container-fluid">
             <div class="row">
-             <div class="col-md-8"><div class="five-big-block"><br/><br/><br/><br/><br/><br/><br/><br/></div></div>
-             <div class="col-md-4"><div class="five-sm-block"><br/><br/><br/><br/><br/><br/><br/><br/></div></div>
+             <div class="col-md-8">
+                 <div class="five-big-block">
+                     <h1>Наш калькулятор</h1>
+                     <div class="calc-block">
+                         <h2><span>Выручка</span></h2>
+                         <input type="hidden" class="slider1" value="10000" />
+                     </div>
+                     <div class="calc-block">
+                         <h2><span>Переменные расходы</span></h2>
+                         <input type="hidden" class="slider2" value="23" />
+                     </div>
+                     <div class="calc-block">
+                         <h2><span>Постоянные расходы</span></h2>
+                         <input type="hidden" class="slider3" value="23" />
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="five-sm-block">
+                     <h1>Ваша прибыль</h1>
+                     <div class="res">0</div>
+                     <br/><br/><br/><br/><br/><br/><br/><br/>
+                 </div>
+             </div>
             </div>
         </div>
     </div>

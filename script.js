@@ -10,6 +10,46 @@ $(document).ready(function() {
         scrollingSpeed: 700,
         easingcss3: 'ease',
         afterRender: function(){
+
+            var w = $(".calc-block").width();
+
+            $('.slider1').jRange({
+                from: 15000,
+                to: 250000,
+                step: 5000,
+                scale: ["15000 р.","250000 р."],
+                format: "%s рублей",
+                width: w-100,
+                showLabels: true,
+                theme: "theme-blue",
+                onstatechange: function(){
+                    $(".res").html($(".slider1").val());
+                    //($(".slider1").val());
+                }
+            });
+            $('.slider2').jRange({
+                from: 0,
+                to: 100,
+                step: 1,
+                scale: [0,25,50,75,100],
+                format: '%s',
+                width: w-100,
+                showLabels: true,
+                theme: "theme-blue"
+            });
+            $('.slider3').jRange({
+                from: 0,
+                to: 100,
+                step: 1,
+                scale: [0,25,50,75,100],
+                format: '%s',
+                width: w-100,
+                showLabels: true,
+                theme: "theme-blue"
+            });
+
+
+
             var titleHeight = $(".three-row-1").height();
 
             $(".three-one-content").css("width", $(window).width() - 150);

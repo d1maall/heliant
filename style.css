@@ -734,4 +734,37 @@ body {
   left: 0;
   width: 100%; }
 
+.five-big-block h1 {
+  text-align: center; }
+.five-big-block .calc-block {
+  border: 1px solid #D8D8D8;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px; }
+  .five-big-block .calc-block h2 {
+    margin-top: -17px;
+    text-align: left;
+    margin-left: 50px;
+    color: #505050;
+    font-weight: 200; }
+    .five-big-block .calc-block h2 span {
+      background-color: #fff; }
+
+.slider-container {
+  margin-bottom: 50px;
+  margin-left: 50px; }
+  .slider-container .back-bar {
+    height: 17px;
+    border-radius: 0px; }
+    .slider-container .back-bar .selected-bar {
+      border-radius: 0px; }
+    .slider-container .back-bar .pointer {
+      width: 8px;
+      height: 29px;
+      top: -6px;
+      border-radius: 0px;
+      border-color: #D4D4D4; }
+      .slider-container .back-bar .pointer:hover {
+        cursor: pointer; }
+
 /*# sourceMappingURL=style.css.map */
