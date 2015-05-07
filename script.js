@@ -17,13 +17,14 @@ $(document).ready(function() {
                 from: 15000,
                 to: 250000,
                 step: 5000,
-                scale: ["15000 р.","250000 р."],
+                scale: ["15&nbsp;000&nbsp;р.","250&nbsp;000&nbsp;р."],
                 format: "%s рублей",
                 width: w-100,
                 showLabels: true,
                 theme: "theme-blue",
                 onstatechange: function(){
                     $(".res").html($(".slider1").val());
+                    $(".chart").css("height", $(".slider1").val()/1000)
                     //($(".slider1").val());
                 }
             });
@@ -47,8 +48,7 @@ $(document).ready(function() {
                 showLabels: true,
                 theme: "theme-blue"
             });
-
-
+            $(".five-sm-block").height($(".five-big-block").height());
 
             var titleHeight = $(".three-row-1").height();
 

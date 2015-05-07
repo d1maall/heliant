@@ -484,9 +484,10 @@ body
 .five-big-block
   h1
     text-align: center
+    color: $gray
+    font-weight: 300
   .calc-block
-    border: 1px solid #D8D8D8
-    margin-bottom: 20px
+    margin-bottom: 55px
     margin-left: 10px
     margin-right: 10px
     h2
@@ -497,19 +498,31 @@ body
       font-weight: 200
       span
         background-color: #fff
-.slider-container
-  margin-bottom: 50px
-  margin-left: 50px
-  .back-bar
-    height: 17px
-    border-radius: 0px
-    .selected-bar
-      border-radius: 0px
-    .pointer
-      width: 8px
-      height: 29px
-      top: -6px
-      border-radius: 0px
-      border-color: #D4D4D4
-      &:hover
-        cursor: pointer
+    .slider-container
+      margin-bottom: 40px
+      margin-left: 50px
+      .back-bar
+        height: 17px
+        border-radius: 0px
+        .selected-bar
+          border-radius: 0px
+        .pointer
+          width: 30px
+          height: 30px
+          top: -6px
+          border-radius: 50%
+          border-color: #D4D4D4
+          &:hover
+            cursor: pointer
+
+.five-sm-block
+  h1
+    text-align: center
+    color: $gray
+    font-weight: 300
+  .chart
+    position: absolute
+    bottom: 25%
+    width: 45px
+    height: 20px
+    background-color: $yellow
