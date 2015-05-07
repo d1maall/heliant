@@ -320,8 +320,15 @@ body
         +three-content
     .three-slide-title
       +title($gray,transparent)
+      h2
+        margin: 0
+        padding-top: 15px
+        padding-bottom: 15px
     .three-slide-text
       text-align: center
+      color: $light-gray
+      p
+        margin: 0
     +button
     .col-md-1
       padding: 0
@@ -333,23 +340,35 @@ body
       text-align: center
       color: $light-gray
     .three-block-big
+      margin-bottom: 75px
       .title-case
         +title($gray,transparent)
         font-size: 1.2em
       .block-case
-        img
-          width: 15%
-          margin-left: 15%
-          margin-top: 9px
-          +drop-shadow(0.4)
-        p
-          margin-left: 15%
-          font-size: 1em
-          color: $light-gray
+        //padding-left: 25%
+        //padding-right: 5%
+        div
+          display: inline-block
+          text-align: center
+          width: 100px
+          position: relative
+          left: 25%
+          @include transform(translateX(20%))
+          img
+            width: 70%
+            margin-top: 1em
+            +drop-shadow(0.4)
+          p
+            margin-left: 15%
+            font-size: 1em
+            color: $light-gray
+      .right-img
+        left: 15%
+        @include transform(translateX(-12%))
+
     .first-block
-      border-right: solid 2px $gray
-    .second-block
-      border-left: solid 2px $gray
+      border-right: solid 1px $gray
+
 .four
   background-color: $white
   .four-title
