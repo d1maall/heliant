@@ -8,7 +8,7 @@ $(document).ready(function() {
         controlArrows: false,
         css3: true,
         scrollingSpeed: 700,
-        easingcss3: 'ease-in-out',
+        easingcss3: 'ease',
         afterRender: function(){
             var titleHeight = $(".three-row-1").height();
 
@@ -26,6 +26,14 @@ $(document).ready(function() {
             $(".three-three-content").css("left", 2 * $(window).width() + 75);
             $(".three-three-content").css("min-height", $(window).height() - 170);
             $(".three-three-content").css("top", 0);
+
+            $(".left-arrow").click(function(){
+                $.fn.fullpage.moveSlideLeft();
+            });
+
+            $(".right-arrow").click(function(){
+                $.fn.fullpage.moveSlideRight();
+            });
 
             /*setInterval(function () {
                 $.fn.fullpage.moveSlideRight();

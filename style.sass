@@ -335,6 +335,8 @@ body
     .col-md-5
       padding: 0
     .three-block-sm
+      &:hover
+        cursor: pointer
       font-size: 4em
       //margin-top: 20px
       text-align: center
@@ -437,28 +439,34 @@ body
 
 .six-container-title
   position: absolute
-  @include transition(all 700ms ease-in-out)
+  @include transition(top 700ms ease)
+  //@include transform(rotate(0.01deg))
+  @include transform(translate3d(0,0,0))
   top: 100%
   //display: none
   .six-title
     +title($white,$blue)
   +stripes($blue)
   width: 100%
-  z-index: 9999
+  z-index: 99
 
 .six-container-title-up
   position: absolute
   //transition: 0.7s ease-in-out
-  @include transition(all 700ms ease-in-out)
+  @include transition(top 700ms ease)
+  //@include transform(rotate(0.01deg))
+  @include transform(translate3d(0,0,0))
   top: -100%
   width: 100%
-  z-index: 9999
+  z-index: 99
 
 .position-fixed
-  @include transition(all 700ms ease-in-out)
-  top: 0px
+  @include transition(top 700ms ease)
+  top: 0
+  //@include transform(rotate(0.01deg))
+  @include transform(translate3d(0,0,0))
   //display: block
-  z-index: 9999
+  z-index: 99
   //position: absolute
   position: fixed
   left: 0
