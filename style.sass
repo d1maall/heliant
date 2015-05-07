@@ -74,6 +74,14 @@ $title-font-size: 1.5em
   position: absolute
   background-color: $white
 
+=shadow
+  box-shadow: 0 1px 2px $light-gray
+  @include transform(translateZ(0))
+  transition: box-shadow 0.25s ease-in
+  padding-bottom: 10px
+  &:hover
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3)
+
 
 
 html
@@ -270,12 +278,7 @@ body
     background-color: #fff
     @include border-top-radius(5px)
     @include border-bottom-radius(5px)
-    box-shadow: 0 1px 2px $light-gray
-    @include transform(translateZ(0))
-    transition: box-shadow 0.25s ease-in
-    padding-bottom: 10px
-    &:hover
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3)
+    +shadow
     img
       width: 70%
       margin-left: 15%
@@ -338,7 +341,7 @@ body
       &:hover
         cursor: pointer
       font-size: 4em
-      //margin-top: 20px
+      margin-top: 100px
       text-align: center
       color: $light-gray
     .three-block-big
@@ -383,11 +386,7 @@ body
     font-family: "Raleway Cyr", sans-serif
     @include border-top-radius(5px)
     @include border-bottom-radius(5px)
-    box-shadow: 0 1px 2px $light-gray
-    @include transform(translateZ(0))
-    transition: box-shadow 0.25s ease-in
-    &:hover
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3)
+    +shadow
     h3
       text-align: center
     p
@@ -402,6 +401,16 @@ body
   .five-title
     +title($blue,$white)
   +stripes($white)
+  .five-big-block
+    background-color: $white
+    @include border-top-radius(5px)
+    @include border-bottom-radius(5px)
+    +shadow
+  .five-sm-block
+    background-color: $white
+    @include border-top-radius(5px)
+    @include border-bottom-radius(5px)
+    +shadow
 
 .six
   background-color: $white
