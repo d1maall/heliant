@@ -70,9 +70,10 @@ $(document).ready(function() {
             $(".three-three-content").css("min-height", $(window).height() - 150);
             $(".three-three-content").css("top", -5);
 
-            $(".second-block").css("height", $(".three-one-content").height())
-            $(".first-block").css("height", $(".three-one-content").height())
-            $(".three-block-sm").css("margin-top",0.5 * $(".three-one-content").height())
+            $(".second-block").css("height", $(".three-one-content").height());
+            $(".first-block").css("height", $(".three-one-content").height());
+            $(".three-block-sm").css("margin-top",0.5 * $(".three-one-content").height());
+            $(".s678-block-text").css("height", $(".s678-block-pic").height());
 
             $(".left-arrow").click(function(){
                 $.fn.fullpage.moveSlideLeft();
