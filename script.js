@@ -23,7 +23,7 @@ $(document).ready(function() {
                 showLabels: true,
                 theme: "theme-blue",
                 onstatechange: function(){
-                    $(".res").html($(".slider1").val());
+                    $(".res").html($(".slider1").val() + " руб.");
                     $(".chart").css("height", $(".slider1").val()/1000)
                     //($(".slider1").val());
                 }
@@ -32,8 +32,8 @@ $(document).ready(function() {
                 from: 0,
                 to: 100,
                 step: 1,
-                scale: [0,25,50,75,100],
-                format: '%s',
+                scale: ["0%","25%","50%","75%","100%"],
+                format: '%s%',
                 width: w-100,
                 showLabels: true,
                 theme: "theme-blue"
