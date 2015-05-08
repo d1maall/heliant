@@ -11,6 +11,9 @@ $(document).ready(function() {
         easingcss3: 'ease',
         afterRender: function(){
 
+            var fourHeight = Math.max.apply(Math, $('.four-block').map(function(){ return $(this).height(); }).get());
+            $(".four-block").css("height", fourHeight);
+
             var w = $(".calc-block").width();
 
             $('.slider1').jRange({
@@ -130,10 +133,6 @@ $(document).ready(function() {
                 $(".ten-container-title").removeClass("ten-container-title-fixed");
                 //$(".six-container-title").removeClass("six-container-title-up")
             }
-
-            /*if(index == 8 && direction =='down'){
-                $(".six-container-title").removeClass("position-fixed");
-            }*/
         }
     });
 });
