@@ -111,6 +111,26 @@ $(document).ready(function() {
                 $(".six-container-title").removeClass("position-fixed");
                 //$(".six-container-title").removeClass("six-container-title-up")
             }
+
+            if (index == 9 && direction == "down"){
+                $(".ten-container-title").addClass("ten-container-title-fixed");
+            }
+
+            if (index == 11 && direction == "down"){
+                $(".ten-container-title").removeClass("ten-container-title-fixed");
+                $(".ten-container-title").addClass("ten-container-title-up");
+            }
+
+            if (index == 12 && direction == "up"){
+                $(".ten-container-title").addClass("ten-container-title-fixed");
+                $(".ten-container-title").removeClass("ten-container-title-up");
+            }
+
+            if(index == 10 && direction =='up'){
+                $(".ten-container-title").removeClass("ten-container-title-fixed");
+                //$(".six-container-title").removeClass("six-container-title-up")
+            }
+
             /*if(index == 8 && direction =='down'){
                 $(".six-container-title").removeClass("position-fixed");
             }*/
