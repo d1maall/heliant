@@ -300,17 +300,20 @@ body {
     width: 10px;
     height: 10px;
     position: absolute;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px #999999; }
   .three .three-row-2 .three-two .three-two-content {
     width: 10px;
     height: 10px;
     position: absolute;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px #999999; }
   .three .three-row-2 .three-three .three-three-content {
     width: 10px;
     height: 10px;
     position: absolute;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px #999999; }
   .three .three-row-2 .three-slide-title {
     width: 100%;
     text-align: center;
@@ -324,21 +327,75 @@ body {
       padding-bottom: 10px; }
     .three .three-row-2 .three-slide-title h2 {
       margin: 0;
-      padding-top: 15px;
+      font-size: 1.5em;
+      padding-top: 20px;
       padding-bottom: 15px; }
   .three .three-row-2 .three-slide-text {
     text-align: center;
-    color: #999999; }
+    color: #505050; }
     .three .three-row-2 .three-slide-text p {
       margin: 0; }
-  .three .three-row-2 .button {
+  .three .three-row-2 .col-md-6 {
+    padding: 0; }
+  .three .three-row-2 .three-block-sm {
+    font-size: 2em;
+    text-align: center;
+    color: #999999;
+    position: absolute;
+    z-index: 99999; }
+    .three .three-row-2 .three-block-sm:hover {
+      cursor: pointer; }
+  .three .three-row-2 .right-arrow {
+    right: 0; }
+  .three .first-block {
+    border-right: solid 1px #999999; }
+  .three .second-block .title-case {
+    width: 100%;
+    text-align: center;
+    color: #505050;
+    background-color: transparent;
+    font-size: 1.5em;
+    font-family: "Museo Sans Cyr", sans-serif;
+    margin-top: -24px;
+    padding-top: 24px; }
+    .three .second-block .title-case h1 {
+      margin: 0 0;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  .three .second-block .text-case {
+    padding-left: 24px; }
+    .three .second-block .text-case .text-case-first {
+      display: inline-block;
+      width: 30%;
+      text-align: left;
+      margin-left: 15px;
+      color: #999999; }
+      .three .second-block .text-case .text-case-first img {
+        width: 25%;
+        filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.4));
+        -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.4)); }
+    .three .second-block .text-case .text-case-second {
+      display: inline-block;
+      width: 30%;
+      text-align: left;
+      margin-left: 15px;
+      color: #999999; }
+      .three .second-block .text-case .text-case-second img {
+        width: 25%;
+        filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.4));
+        -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.4)); }
+    .three .second-block .text-case .slide2 {
+      width: 40%; }
+      .three .second-block .text-case .slide2 img {
+        width: 30%; }
+  .three .second-block .button {
     padding-top: 10px;
     background-color: #ffeb3b;
     margin-top: 30px;
     padding-bottom: 10px;
     margin-bottom: 25px;
-    width: 30%;
-    margin-left: 35%;
+    width: 80%;
+    margin-left: 10%;
     text-align: center;
     font-size: 1.5em;
     color: #505050;
@@ -354,63 +411,11 @@ body {
     -o-transform: translateZ(0);
     transform: translateZ(0);
     transition: box-shadow 0.25s ease-in; }
-    .three .three-row-2 .button:hover {
+    .three .second-block .button:hover {
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       cursor: pointer; }
-  .three .three-row-2 .col-md-1 {
-    padding: 0; }
-  .three .three-row-2 .col-md-5 {
-    padding: 0; }
-  .three .three-row-2 .three-block-sm {
-    font-size: 4em;
-    margin-top: 100px;
-    text-align: center;
-    color: #999999; }
-    .three .three-row-2 .three-block-sm:hover {
-      cursor: pointer; }
-  .three .three-row-2 .three-block-big {
-    margin-bottom: 75px; }
-    .three .three-row-2 .three-block-big .title-case {
-      width: 100%;
-      text-align: center;
-      color: #505050;
-      background-color: transparent;
-      font-size: 1.5em;
-      font-family: "Museo Sans Cyr", sans-serif;
-      font-size: 1.2em; }
-      .three .three-row-2 .three-block-big .title-case h1 {
-        margin: 0 0;
-        padding-top: 10px;
-        padding-bottom: 10px; }
-    .three .three-row-2 .three-block-big .block-case div {
-      display: inline-block;
-      text-align: center;
-      width: 100px;
-      position: relative;
-      left: 25%;
-      -webkit-transform: translateX(20%);
-      -moz-transform: translateX(20%);
-      -ms-transform: translateX(20%);
-      -o-transform: translateX(20%);
-      transform: translateX(20%); }
-      .three .three-row-2 .three-block-big .block-case div img {
-        width: 70%;
-        margin-top: 1em;
-        filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.4));
-        -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.4)); }
-      .three .three-row-2 .three-block-big .block-case div p {
-        margin-left: 15%;
-        font-size: 1em;
-        color: #999999; }
-    .three .three-row-2 .three-block-big .right-img {
-      left: 15%;
-      -webkit-transform: translateX(-12%);
-      -moz-transform: translateX(-12%);
-      -ms-transform: translateX(-12%);
-      -o-transform: translateX(-12%);
-      transform: translateX(-12%); }
-  .three .three-row-2 .first-block {
-    border-right: solid 1px #505050; }
+  .three .second-block .btn-s3 {
+    margin-top: -2px; }
 
 .four {
   background-color: #ffffff; }

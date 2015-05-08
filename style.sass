@@ -9,6 +9,7 @@ $light-gray: #999999
 $gray: #505050
 $title-font-size: 1.5em
 
+
 =drop-shadow($opacity)
   filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, $opacity))
   -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, $opacity))
@@ -46,15 +47,15 @@ $title-font-size: 1.5em
     padding-top: 10px
     padding-bottom: 10px
 
-=button
+=button($width,$margin-left)
   .button
     padding-top: 10px
     background-color: #ffeb3b
     margin-top: 30px
     padding-bottom: 10px
     margin-bottom: 25px
-    width: 30%
-    margin-left: 35%
+    width: $width
+    margin-left: $margin-left
     text-align: center
     font-size: 1.5em
     color: $gray
@@ -73,6 +74,7 @@ $title-font-size: 1.5em
   height: 10px
   position: absolute
   background-color: $white
+  box-shadow: 0 2px 4px $light-gray
 
 =shadow
   box-shadow: 0 1px 2px $light-gray
@@ -290,7 +292,7 @@ body
       font-weight: 100
       font-family: "Raleway Cyr"
       color: $gray
-  +button
+  +button(30%,35%)
   .two-text
     margin-top: 2%
     font-family: "Raleway Cyr", sans-serif
@@ -302,14 +304,12 @@ body
 
 .three
   background-color: $blue
-  //color: $white
+
   .three-row-1
     .three-title
-      //position: absolute
-      //z-index: 2
+
       +title($blue,$white)
-    //.three-stripes-position
-      //position: absolute
+
     +stripes($white)
   .three-row-2
     .three-one
@@ -321,58 +321,78 @@ body
     .three-three
       .three-three-content
         +three-content
+
     .three-slide-title
       +title($gray,transparent)
       h2
         margin: 0
-        padding-top: 15px
+        font-size: 1.5em
+        padding-top: 20px
         padding-bottom: 15px
     .three-slide-text
       text-align: center
-      color: $light-gray
+      color: $gray
       p
         margin: 0
-    +button
-    .col-md-1
+    //+button
+    //.col-md-1
       padding: 0
-    .col-md-5
+      width: 2.1%
+    .col-md-6
       padding: 0
+      //width: 47.9%
     .three-block-sm
       &:hover
         cursor: pointer
-      font-size: 4em
-      margin-top: 100px
+      font-size: 2em
+      //margin-top: 200px
       text-align: center
       color: $light-gray
-    .three-block-big
-      margin-bottom: 75px
-      .title-case
-        +title($gray,transparent)
-        font-size: 1.2em
-      .block-case
-        //padding-left: 25%
-        //padding-right: 5%
-        div
-          display: inline-block
-          text-align: center
-          width: 100px
-          position: relative
-          left: 25%
-          @include transform(translateX(20%))
-          img
-            width: 70%
-            margin-top: 1em
-            +drop-shadow(0.4)
-          p
-            margin-left: 15%
-            font-size: 1em
-            color: $light-gray
-      .right-img
-        left: 15%
-        @include transform(translateX(-12%))
+      position: absolute
+      z-index: 99999
+    .right-arrow
+      right: 0
 
-    .first-block
-      border-right: solid 1px $gray
+  .first-block
+    border-right: solid 1px $light-gray
+  .second-block
+    //border-left: solid 1px $gray
+
+    //margin-bottom: 24px
+    .title-case
+      +title($gray,transparent)
+      margin-top: -24px
+      padding-top: 24px
+
+    .text-case
+      padding-left: 24px
+      .text-case-first
+        display: inline-block
+        width: 30%
+        text-align: left
+        margin-left: 15px
+        img
+          width: 25%
+          +drop-shadow(0.4)
+        p
+        color: $light-gray
+      .text-case-second
+        display: inline-block
+        width: 30%
+        text-align: left
+        margin-left: 15px
+        img
+          width: 25%
+          +drop-shadow(0.4)
+        p
+        color: $light-gray
+      .slide2
+        width: 40%
+        img
+          width: 30%
+    +button(80%,10%)
+    .btn-s3
+      margin-top: -2px
 
 .four
   background-color: $white
@@ -393,7 +413,7 @@ body
       text-align: center
       margin-left: 10%
       margin-right: 10%
-  +button
+  +button(30%,35%)
   +stripes($blue)
 
 .five

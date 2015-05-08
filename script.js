@@ -52,20 +52,24 @@ $(document).ready(function() {
 
             var titleHeight = $(".three-row-1").height();
 
-            $(".three-one-content").css("width", $(window).width() - 150);
-            $(".three-one-content").css("left", 75);
-            $(".three-one-content").css("min-height", $(window).height() - 170);
-            $(".three-one-content").css("top", 0);
+            $(".three-one-content").css("width", $(window).width() - 50);
+            $(".three-one-content").css("left", 25);
+            $(".three-one-content").css("min-height", $(window).height() - 150);
+            $(".three-one-content").css("top", -5);
 
-            $(".three-two-content").css("width", $(window).width() - 150);
-            $(".three-two-content").css("left", $(window).width() + 75);
-            $(".three-two-content").css("min-height", $(window).height() - 170);
-            $(".three-two-content").css("top", 0);
+            $(".three-two-content").css("width", $(window).width() - 50);
+            $(".three-two-content").css("left", $(window).width() + 25);
+            $(".three-two-content").css("min-height", $(window).height() - 150);
+            $(".three-two-content").css("top", -5);
 
-            $(".three-three-content").css("width", $(window).width() - 150);
-            $(".three-three-content").css("left", 2 * $(window).width() + 75);
-            $(".three-three-content").css("min-height", $(window).height() - 170);
-            $(".three-three-content").css("top", 0);
+            $(".three-three-content").css("width", $(window).width() - 50);
+            $(".three-three-content").css("left", 2 * $(window).width() + 25);
+            $(".three-three-content").css("min-height", $(window).height() - 150);
+            $(".three-three-content").css("top", -5);
+
+            $(".second-block").css("height", $(".three-one-content").height())
+            $(".first-block").css("height", $(".three-one-content").height())
+            $(".three-block-sm").css("margin-top",0.5 * $(".three-one-content").height())
 
             $(".left-arrow").click(function(){
                 $.fn.fullpage.moveSlideLeft();
