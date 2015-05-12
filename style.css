@@ -1020,8 +1020,8 @@ body {
       background-size: 0px 100%, 15px 27px, 15px 27px; }
   .thirteen .contactus {
     position: absolute;
-    width: 50%;
-    margin-left: 25%;
+    width: 25%;
+    margin-left: 37.5%;
     box-shadow: 0 1px 2px #999999;
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
@@ -1032,6 +1032,11 @@ body {
     padding-bottom: 10px; }
     .thirteen .contactus:hover {
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
+    .thirteen .contactus div {
+      font-size: 2em;
+      font-weight: 100;
+      margin-top: 10%;
+      text-align: center; }
 
 .six-container-title {
   position: absolute;
