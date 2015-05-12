@@ -227,7 +227,7 @@ body
       cursor: pointer
     img
       width: 50px
-      margin-top: -50%
+      margin-top: -27%
       @include transform(translateY(21%))
       padding-right: 10px
 
@@ -668,7 +668,15 @@ body
       color: $light-gray
       font-size: 1.5em
       font-weight: 100
-
+.thirteen
+  background-color: #fff
+  .thirteen-title
+    +title($white,$blue)
+  +stripes($blue)
+  .contactus
+    width: 50%
+    margin-left: 25%
+    +shadow
 
 .six-container-title
   position: absolute

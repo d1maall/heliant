@@ -110,7 +110,7 @@ body {
       cursor: pointer; }
     .menu li img {
       width: 50px;
-      margin-top: -50%;
+      margin-top: -27%;
       -webkit-transform: translateY(21%);
       -moz-transform: translateY(21%);
       -ms-transform: translateY(21%);
@@ -987,6 +987,50 @@ body {
     color: #999999;
     font-size: 1.5em;
     font-weight: 100; }
+
+.thirteen {
+  background-color: #fff; }
+  .thirteen .thirteen-title {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #62c2cc;
+    font-size: 1.5em;
+    font-family: "Museo Sans Cyr", sans-serif; }
+    .thirteen .thirteen-title h1 {
+      margin: 0 0;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  .thirteen .stripes {
+    margin-top: -7px;
+    filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.1));
+    margin-bottom: 5px; }
+    .thirteen .stripes:after {
+      content: " ";
+      display: block;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 55px;
+      background: linear-gradient(transparent 0%, transparent 0%), linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent linear-gradient(135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%;
+      background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-45deg, #62c2cc 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(-135deg, #62c2cc 33.33%, transparent 33.33%) 0 0%;
+      background-repeat: repeat-x;
+      background-size: 0px 100%, 15px 27px, 15px 27px; }
+  .thirteen .contactus {
+    width: 50%;
+    margin-left: 25%;
+    box-shadow: 0 1px 2px #999999;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: box-shadow 0.25s ease-in;
+    padding-bottom: 10px; }
+    .thirteen .contactus:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
 
 .six-container-title {
   position: absolute;

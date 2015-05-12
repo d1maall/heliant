@@ -4,7 +4,7 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
         navigation: false,
-        anchors:['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'],
+        anchors:['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen'],
         scrollOverflow: true,
         controlArrows: false,
         css3: true,
@@ -109,6 +109,8 @@ $(document).ready(function() {
             var mystripes = $(".stripes").height();
             var mt = (mytwelvescreen-mytwelveform - mytitle - mystripes)/2;
             $(".twelve-form").css("bottom", mt);
+
+
 
             /*setInterval(function () {
                 $.fn.fullpage.moveSlideRight();
