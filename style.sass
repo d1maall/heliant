@@ -349,7 +349,10 @@ body
     .three-block-sm
       &:hover
         cursor: pointer
-      font-size: 2em
+      font-size: 4em
+      @include transform(translateY(-50%))
+      margin-left: 5px
+      margin-right: 5px
       //margin-top: 200px
       text-align: center
       color: $light-gray
@@ -359,7 +362,7 @@ body
       right: 0
 
   .first-block
-    border-right: solid 1px $light-gray
+    border-right: solid 1px #f5f5f5
   .second-block
     //border-left: solid 1px $gray
 
@@ -404,7 +407,7 @@ body
           width: 30%
     +button(80%,10%)
     .btn-s3
-      //margin-top: -2px
+      margin-top: -2px
 
 .four
   background-color: $white
@@ -524,18 +527,18 @@ body
   .ten-video
     position: relative
     top: 150px
-  .ten-content
+  .content-10-11
     position: relative
     top: 150px
+    .text-10-11
+      @include triangle(12px, gray, left)
 
 .eleven
   background-color: $white
   .eleven-video
     position: relative
     top: 150px
-  .eleven-content
-    position: relative
-    top: 150px
+
 
 .twelve
   background-color: $blue
