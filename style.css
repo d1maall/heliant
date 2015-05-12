@@ -860,12 +860,13 @@ body {
   margin-left: 10px;
   margin-right: 10px; }
   .five-big-block .calc-block h2 {
+    margin-left: 50px;
     margin-top: -17px;
-    text-align: center;
-    color: #505050;
+    text-align: left;
+    color: #999999;
     font-weight: 300; }
     .five-big-block .calc-block h2 span {
-      background-color: #fff; }
+      color: #505050; }
   .five-big-block .calc-block .slider-container {
     margin-bottom: 40px;
     margin-left: 50px; }
@@ -892,6 +893,7 @@ body {
 .five-sm-block .bar {
   display: inline-block; }
   .five-sm-block .bar .chart {
+    transition: 0.3s;
     left: 30px;
     position: absolute;
     bottom: 25%;

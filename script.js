@@ -4,6 +4,7 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
         navigation: false,
+        anchors:['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'],
         scrollOverflow: true,
         controlArrows: false,
         css3: true,
@@ -23,10 +24,11 @@ $(document).ready(function() {
                 scale: ["15&nbsp;000&nbsp;р.","250&nbsp;000&nbsp;р."],
                 format: "%s рублей",
                 width: w-100,
-                showLabels: true,
+                showLabels: false,
                 theme: "theme-blue",
                 onstatechange: function(){
                     $(".res").html($(".slider1").val() + " руб.");
+                    $(".i-result").html($(".slider1").val() + " руб.");
                     $(".chart").css("height", $(".slider1").val()/1000)
                     //($(".slider1").val());
                 }
@@ -38,8 +40,11 @@ $(document).ready(function() {
                 scale: ["0%","25%","50%","75%","100%"],
                 format: '%s%',
                 width: w-100,
-                showLabels: true,
-                theme: "theme-blue"
+                showLabels: false,
+                theme: "theme-blue",
+                onstatechange: function(){
+                    $(".vc-result").html($(".slider2").val() + "%");
+                }
             });
             $('.slider3').jRange({
                 from: 0,
@@ -48,8 +53,11 @@ $(document).ready(function() {
                 scale: [0,25,50,75,100],
                 format: '%s',
                 width: w-100,
-                showLabels: true,
-                theme: "theme-blue"
+                showLabels: false,
+                theme: "theme-blue",
+                onstatechange: function(){
+                    $(".fc-result").html($(".slider3").val() + " руб.");
+                }
             });
             $(".five-sm-block").height($(".five-big-block").height());
 
@@ -83,6 +91,13 @@ $(document).ready(function() {
                 $.fn.fullpage.moveSlideRight();
             });
 
+            $('.autoplay').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+
             /*setInterval(function () {
                 $.fn.fullpage.moveSlideRight();
             }, 4000);*/
@@ -94,6 +109,9 @@ $(document).ready(function() {
 
             if(index == 5){
                 $(".six-container-title").removeClass("six-container-title-up");
+            }
+            if(index == 9){
+                $(".ten-container-title").removeClass("ten-container-title-up");
             }
         },
         onLeave: function(index, nextIndex, direction){
