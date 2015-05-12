@@ -82,6 +82,7 @@ $(document).ready(function() {
             $(".first-block").css("height", $(".three-one-content").height());
             $(".three-block-sm").css("margin-top",0.5 * $(".three-one-content").height());
             $(".s678-block-text").css("height", $(".s678-block-pic").height());
+            $(".content-10-11").css("height", $(".ten-video").height());
 
             $(".left-arrow").click(function(){
                 $.fn.fullpage.moveSlideLeft();
