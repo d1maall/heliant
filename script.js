@@ -110,7 +110,12 @@ $(document).ready(function() {
             var mt = (mytwelvescreen-mytwelveform - mytitle - mystripes)/2;
             $(".twelve-form").css("bottom", mt);
 
-
+            var my13screen = $(".thirteen").height();
+            var my13contacts = $(".contactus").height();
+            var my13title = $(".thirteen-title").height();
+            var my13stripes = $(".stripes").height();
+            var my13mt = (my13screen - my13contacts - my13title - my13stripes)/2;
+            $(".contactus").css("bottom", my13mt);
 
             /*setInterval(function () {
                 $.fn.fullpage.moveSlideRight();
