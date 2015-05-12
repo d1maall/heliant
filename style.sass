@@ -85,6 +85,14 @@ $title-font-size: 1.5em
   &:hover
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3)
 
+=twelve-shadow
+  box-shadow: 0 4px 10px $light-gray
+  @include transform(translateZ(0))
+  transition: box-shadow 0.25s ease-in
+  padding-bottom: 10px
+  &:hover
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3)
+
 
 
 html
@@ -305,6 +313,7 @@ body
 
 .three
   background-color: $blue
+  background-image: url("img/bgicons1.png")
 
   .three-row-1
     .three-title
@@ -449,6 +458,7 @@ body
 
 .five
   background-color: $blue
+  background-image: url("img/bgicons1.png")
   .five-title
     +title($blue,$white)
   +stripes($white)
@@ -515,6 +525,7 @@ body
 
 .nine
   background-color: $blue
+  background-image: url("img/bgicons1.png")
   .nine-title
     +title($blue,$white)
   +stripes($white)
@@ -594,10 +605,41 @@ body
 
 
 .twelve
-  background-color: $blue
+  &:after
+    content: ""
+    background-color: $blue
+    background-image: url("img/bgicons1.png")
+    opacity: 1
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    position: absolute
+    z-index: -1
   .twelve-title
     +title($blue,$white)
   +stripes($white)
+  .twelve-form
+    position: absolute
+    width: 50%
+    margin-left: 25%
+    background-color: #fff
+    h3
+      margin-top: 0
+      padding-top: 25px
+      font-size: 2em
+      text-align: center
+      color: $gray
+      font-weight: 100
+    +shadow
+    +button(50%,25%)
+    input
+      width: 75%
+      margin-left: 12.5%
+      display: block
+      color: $light-gray
+      font-size: 1.5em
+      font-weight: 100
 
 
 .six-container-title
@@ -678,15 +720,15 @@ body
     font-weight: 100
     font-size: 4em
     margin-top: 0
-  .bar
+  .bar-left
     display: inline-block
     .chart
       transition: 0.3s
-      left: 30px
+      left: 37%
       position: absolute
       bottom: 25%
       width: 65px
-      height: 20px
+      height: 130px
       padding-left: 10px
       padding-right: 10px
       background-color: rgba(252,234,187,1)
@@ -696,11 +738,33 @@ body
       +shadow
     .res
       width: 65px
-      left: 30px
-      text-align: center
+      left: 37%
+      text-align: right
       position: absolute
       bottom: 15%
-
+  .bar-right
+    display: inline-block
+    .chart-right
+      transition: 0.3s
+      right: 37%
+      position: absolute
+      bottom: 25%
+      width: 65px
+      height: 65px
+      padding-left: 10px
+      padding-right: 10px
+      background-color: rgba(252,234,187,1)
+      background: #d0e4f7
+      background-color: #54CBFF
+      //border-bottom: 1px solid $gray
+      +shadow
+    .res-right
+      width: 65px
+      right: 37%
+      text-align: left
+      position: absolute
+      bottom: 15%
+  +button(75%, 12.5%)
 
 .ten-container-title
   position: absolute

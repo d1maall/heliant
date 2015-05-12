@@ -29,7 +29,9 @@ $(document).ready(function() {
                 onstatechange: function(){
                     $(".res").html($(".slider1").val() + " руб.");
                     $(".i-result").html($(".slider1").val() + " руб.");
-                    $(".chart").css("height", $(".slider1").val()/1000)
+                    $(".chart").css("height", $(".slider1").val()/1000);
+                    $(".chart-right").css("height", ($(".slider1").val() * $(".slider2").val())/100000);
+                    $(".res-right").html(($(".slider1").val()*$(".slider2").val())/100 + " руб.");
                     //($(".slider1").val());
                 }
             });
@@ -43,6 +45,8 @@ $(document).ready(function() {
                 showLabels: false,
                 theme: "theme-blue",
                 onstatechange: function(){
+                    $(".res-right").html(($(".slider1").val()*$(".slider2").val())/100 + " руб.");
+                    $(".chart-right").css("height", ($(".slider1").val() * $(".slider2").val())/100000);
                     $(".vc-result").html($(".slider2").val() + "%");
                 }
             });
@@ -96,8 +100,15 @@ $(document).ready(function() {
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 2000
             });
+
+            var mytwelvescreen = $(".twelve").height();
+            var mytwelveform = $(".twelve-form").height();
+            var mytitle = $(".twelve-title").height();
+            var mystripes = $(".stripes").height();
+            var mt = (mytwelvescreen-mytwelveform - mytitle - mystripes)/2;
+            $(".twelve-form").css("bottom", mt);
 
             /*setInterval(function () {
                 $.fn.fullpage.moveSlideRight();
